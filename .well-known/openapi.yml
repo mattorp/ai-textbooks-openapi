@@ -4,7 +4,7 @@ info:
   description: A plugin that provides guidance on how to utilize the latest research on AI-assisted structured exploration.
   version: 'v1'
 servers:
-  - url: http://localhost:3000
+  - url: https://ai-textbooks.oeye.site
 paths:
   /ai-textbooks/explanation-traces.md:
     get:

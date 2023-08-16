@@ -9,9 +9,9 @@
   },
   "api": {
     "type": "openapi",
-    "url": "http://localhost:3000/.well-known/openapi.yml"
+    "url": "https://ai-textbooks.oeye.site/.well-known/openapi.yml"
   },
-  "logo_url": "http://localhost:3000/logo.png",
+  "logo_url": "https://ai-textbooks.oeye.site/logo.png",
   "contact_email": "matto@oeye.site",
   "legal_info_url": "http://www.example.com/legal"
 }
