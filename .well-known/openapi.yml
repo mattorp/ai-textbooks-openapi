@@ -1,0 +1,82 @@
+openapi: 3.0.1
+info:
+  title: Research Guidance Plugin
+  description: A plugin that provides guidance on how to utilize the latest research on AI-assisted structured exploration.
+  version: 'v1'
+servers:
+  - url: http://localhost:3000
+paths:
+  /ai-textbooks/explanation-traces.md:
+    get:
+      operationId: getExplanationTraces
+      summary: Get guidance on explanation traces
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/guidanceResponse'
+  /ai-textbooks/high-quality-data.md:
+    get:
+      operationId: getHighQualityData
+      summary: Get guidance on the value of high-quality data
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/guidanceResponse'
+  /ai-textbooks/ai-human-collaboration.md:
+    get:
+      operationId: getAIHumanCollaboration
+      summary: Get guidance on AI and human collaboration
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/guidanceResponse'
+  /ai-textbooks/effective-ai-interaction.md:
+    get:
+      operationId: getEffectiveAIInteraction
+      summary: Get guidelines for effective AI interaction
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/guidanceResponse'
+  /ai-textbooks/incentive-systems.md:
+    get:
+      operationId: getIncentiveSystems
+      summary: Get guidance on incentive systems for data contribution
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/guidanceResponse'
+  /ai-textbooks/ai/ethics.md:
+    get:
+      operationId: getAIEthics
+      summary: Get guidance on ethics in AI
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/guidanceResponse'
+components:
+  schemas:
+    guidanceResponse:
+      type: object
+      properties:
+        guidance:
+          type: string
+          description: Detailed guidance based on the latest research.

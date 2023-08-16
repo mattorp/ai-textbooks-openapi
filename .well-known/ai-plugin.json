@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "AI Textbooks",
+  "name_for_model": "ai_textbooks",
+  "description_for_human": "Helps you write AI Textbooks while chatting with ChatGPT",
+  "description_for_model": "Provides ChatGPT guidance on how to structure the conversation to provide high-quality data for AI training, aka AI Textbooks. When the user wants to dive into a topic that requires reasoning, you should use the guidance to follow best practices for AI training, based on the latest research.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://localhost:3000/.well-known/openapi.yml"
+  },
+  "logo_url": "http://localhost:3000/logo.png",
+  "contact_email": "matto@oeye.site",
+  "legal_info_url": "http://www.example.com/legal"
+}
